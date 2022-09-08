@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400;8..30,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+font-family: 'Piazzolla', serif;
+}
+
+
+
+:root {
+   --main-bg:rgb(103, 92, 92);
+   --main-color: #6db7df;
+
+
+}
+
+
+
+html{
+    font-size: 62.5%;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+margin: 0;
+}
+
+.main_menu{
+    background-color: var(--main-bg);
+}
+
+.navbar{
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: 2rem 0;
+}
+
+.navbar a{
+    color: rgb(132, 168, 185);
+    font-size: 1.8rem;
+}
+
+.navbar-toggler{
+    background-color: grey;
+}
+
+.navbar li {
+    margin-left: 2rem;
+}
+
+
+.navbar a:hover{
+    color: rgb(230, 185, 214);
+}
+
+
+.fa-snowflake{
+    transition: all linear;
+   animation: rot 2s linear infinite;
+   color: cadetblue;
+
+}
+
+
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.main_header_left{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.main_header_right{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+
+.main_header_left p{
+    font-size: 2rem;
+}
+
+.main_header_left h1{
+    font-size: 4rem;
+    margin:1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+
+.main_header_left .text_clr{
+    color: var(--main-color);
+}
+
+
+.main_header_left button {
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    outline: none;
+}
+
+
+.main_header_left button:hover{
+    background-color: bisque;
+}
+
+
+
+/* footer code
+ */
+
+ footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+    text-transform: capitalize;
+ }
+
+ footer p {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 5rem;
+    font-size:1.4rem ;
+    text-transform: uppercase;
+
+    
+ }
+
+
+ @media(max-width:768px){
+    .main_header_left{
+        height: auto;
+        margin: 5rem 0;
+
+    }
+
+
+    .main_header_right{
+        height: auto;
+        margin-top: 3rem;
+        
+    }
+ }
+
+
+
+
+ .main_header_right figure img{
+    filter: drop-shadow(0 0.5rem 1rem rgb(91, 91, 65));
+    border-radius: 1rem;
+    /* transition: all linear; */
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+ }
+
+
